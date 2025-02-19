@@ -38,19 +38,19 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #333333; color: white;">    
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/prlogo.png" alt="">
-        <h1 class="sitename">Perennial Robotics</h1>
+        <img src="assets/img/prlogo_new.png" alt="" class="img-fluid" style="max-width: 250px;">
+        <!-- <h1 class="sitename">Perennial Robotics</h1>  -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Home<br></a></li>
-          <li><a href="weedingauger.html">Weeding Auger</a></li>
+          <li><a href="index.html#hero">About<br></a></li>
+          <li><a href="weedingauger.html" class="active">Weeding Auger</a></li>
           <li><a href="ai.html">AI</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -78,9 +78,12 @@
         </div>
       </div><!-- End Page Title -->
 
+
+
       <!-- Media and Description Layout -->
       <div class="container mt-4">
         <div class="row">
+
           <!-- Left Column - Media Gallery -->
           <div class="col-lg-6">
             <!-- Main Display Area -->
@@ -89,19 +92,29 @@
             </div>
         
             <!-- Thumbnails Row -->
+     
             <div class="row g-2">
+
                 <div class="col-3">
-                    <div class="thumbnail-container" data-type="image" data-src="assets/img/weedingauger_1.png" style="height: 160px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer;">
+                    <div class="thumbnail-container" data-type="image" data-src="assets/img/weedingauger_1.png" style="height: 80px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer;">
                         <img src="assets/img/weedingauger_1.png" class="img-fluid" alt="Product View 1" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="thumbnail-container" data-type="image" data-src="assets/img/weedingauger_2.jpg" style="height: 160px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer;">
+                    <div class="thumbnail-container" data-type="image" data-src="assets/img/weedingauger_2.jpg" style="height: 80px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer;">
                         <img src="assets/img/weedingauger_2.jpg" class="img-fluid" alt="Product View 2" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-3">
-                  <div class="thumbnail-container" data-type="video" data-src="https://youtube.com/embed/damj5zp4ldU?si=4Pb8_bmk44x_hwxs" style="height: 160px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer; position: relative;">
+                  <div class="thumbnail-container" data-type="video" data-src="https://www.youtube.com/embed/UOM3PSus_-c?si=uN4HlQU9dN6YIKBY" style="height: 80px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer; position: relative;">
+                      <img src="assets/img/weedingauger_intro_video_thumnail.png" class="img-fluid" alt="Video Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
+                      <div class="position-absolute top-50 start-50 translate-middle">
+                          <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: white;"></i>
+                      </div>
+                  </div>
+                </div>   
+                <div class="col-3">
+                  <div class="thumbnail-container" data-type="video" data-src="https://youtube.com/embed/damj5zp4ldU?si=4Pb8_bmk44x_hwxs" style="height: 80px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer; position: relative;">
                       <img src="assets/img/demo_video_1_thumbnail.png" class="img-fluid" alt="Video Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
                       <div class="position-absolute top-50 start-50 translate-middle">
                           <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: white;"></i>
@@ -109,13 +122,13 @@
                   </div>
                 </div>
                 <div class="col-3">
-                    <div class="thumbnail-container" data-type="video" data-src="https://youtube.com/embed/1a1MEb0JyP0?si=D9szz8ss43XOPhaM" style="height: 160px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer; position: relative;">
+                    <div class="thumbnail-container" data-type="video" data-src="https://youtube.com/embed/1a1MEb0JyP0?si=D9szz8ss43XOPhaM" style="height: 80px; background-color: #ffffff; border-radius: 8px; overflow: hidden; cursor: pointer; position: relative;">
                         <img src="assets/img/demo_video_2_thumbnail.png" class="img-fluid" alt="Video Thumbnail" style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="position-absolute top-50 start-50 translate-middle">
                             <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: white;"></i>
                         </div>
                     </div>
-                </div>
+                </div>                   
 
             </div>
           </div><!-- End Left Column -->
@@ -127,30 +140,29 @@
               <p>Say goodbye to stubborn, established weeds! The RootGone Weeding Auger turns your cordless drill into an efficient weeding machine that tackles even the most challenging, deeply-rooted weeds. Its specially designed spiral blades excel at grabbing and extracting mature weeds with extensive root systems - the type that usually resist traditional weeding methods. Make garden maintenance faster and easier than ever, especially when dealing with well-established unwanted plants.</p>
             </div>
 
-            
+            <!-- Key Features -->
+            <!-- <div class="col-lg-6"> -->
+              <div class="p-4" style="background-color: #ffffff; border-radius: 8px; height: 100%;">
+                <h3>Key Features</h3>
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-check2-circle me-2"></i>Innovative spiral blade design for effective weed entanglement</li>
+                  <li><i class="bi bi-check2-circle me-2"></i>Especially effective on established weeds with developed root systems</li>
+                  <li><i class="bi bi-check2-circle me-2"></i>Compatible with standard cordless drills</li>
+                  <li><i class="bi bi-check2-circle me-2"></i>Durable construction for long-lasting performance</li>
+                  <li><i class="bi bi-check2-circle me-2"></i>Easy to use with minimal physical strain</li>
+                  <li><i class="bi bi-check2-circle me-2"></i>Complete root system removal</li>
+                </ul>
+              </div>
+            <!-- </div> -->
+
+
           </div>
         </div>
       </div>
 
       
       <div class="container mt-5">
-        <div class="row gy-4">
-
-
-          <!-- Key Features -->
-          <div class="col-md-6">
-            <div class="p-4" style="background-color: #ffffff; border-radius: 8px; height: 100%;">
-              <h3>Key Features</h3>
-              <ul class="list-unstyled">
-                <li><i class="bi bi-check2-circle me-2"></i>Innovative spiral blade design for effective weed entanglement</li>
-                <li><i class="bi bi-check2-circle me-2"></i>Especially effective on established weeds with developed root systems</li>
-                <li><i class="bi bi-check2-circle me-2"></i>Compatible with standard cordless drills</li>
-                <li><i class="bi bi-check2-circle me-2"></i>Durable construction for long-lasting performance</li>
-                <li><i class="bi bi-check2-circle me-2"></i>Easy to use with minimal physical strain</li>
-                <li><i class="bi bi-check2-circle me-2"></i>Complete root system removal</li>
-              </ul>
-            </div>
-          </div>
+        <div class="row gy-4">   
 
           <!-- Models -->
           <div class="col-md-6">
@@ -188,6 +200,7 @@
               </div>
             </div>
           </div>
+                    
 
           <!-- What's Included -->
           <div class="col-md-6">
