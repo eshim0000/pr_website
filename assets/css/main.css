@@ -840,12 +840,23 @@ section,
   position: relative;
   padding: 80px 0 60px 0;
   display: flex;
-  align-items: center;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  align-items: flex-start; /* Changed from center to flex-start */
+  background: url(../img/robot_bg.jpeg) top center no-repeat;
   background-size: cover;
 }
 
+.hero .container {
+  position: relative;
+}
+
+.hero .col-lg-6 {
+  position: relative;
+  top: 15vh;
+}
+
+
 .hero h1 {
+  color: color-mix(in srgb, var(--contrast-color), transparent 0%);
   margin: 0;
   font-size: 48px;
   font-weight: 700;
@@ -853,7 +864,7 @@ section,
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 0%);
   margin: 5px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
@@ -861,7 +872,7 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: var(--default-color);
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -883,7 +894,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--default-color), transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
